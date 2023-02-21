@@ -7,13 +7,7 @@ import {
    AfterViewInit,
    AfterViewChecked
   } from '@angular/core';
-/*
-DoCheck,
-AfterContentInit,
-AfterContentChecked,
-AfterViewInit,
-AfterViewChecked,
-*/
+
 @Component({
   selector: 'app-root',
   template: `
