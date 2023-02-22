@@ -12,3 +12,15 @@
 <h2>Pronpety Binding</h2>
 <button [disabled]="checkedDisabled">Button</button>
 <img [src]="imgSrc" [title]="imgTitle" [alt]="imgTitle">
+<br>
+<br>
+<hr>
+<h2>Event Binding</h2>
+<button (click)="alertaInfo($event)">Alert</button>
+<div (mousemove)="mouseMoveTeste($event)">
+</div>
+{{ position.x }} - {{ position.y }}
+<br>
+<br>
+
+<hr>

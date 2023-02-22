@@ -12,13 +12,22 @@ export class DataBidingComponent implements OnInit {
   public maisUm: number = 1;
 
   public checkedDisabled: boolean = false;
-  public imgSrc:string = /* "https://vidafullstack.com.br/wp-content/uploads/2021/01/como-criar-site-400x250.jpg" */
+  public imgSrc:string = /* "https://vidafullstack.com.br/wp-content/uploads/2021/01/como-criar-site-
+   400x250.jpg" */
   "https://conteudo.imguol.com.br/c/noticias/1c/2022/05/24/imagem-criada-no-imagen-prototipo-do-google-que-cria-imagens-baseadas-em-texto-neste-caso-um-cachorro-corgi-andando-de-bicicleta-na-times-square-usando-oculos-de-sol-e-chapeu-de-praia-1653397634334_v2_900x506.jpg";
-
-  public imgTitle: string = "Property Binding"
+ public imgTitle: string = "Property Binding";
+ public position: { x:number, y:number} = { x:0, y:0};
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  // Você pode usar também any no lugar de MouseEvent
+  public alertaInfo (valor: MouseEvent) {
+    console.log(valor);
   }
 
+  //Você pode usar também any no lugar de MouseEvent
+  public mouseMoveTeste (valor: MouseEvent) {
+    this.position.x = valor.offsetX;
+    this.position.y = valor.offsetY;
+  }
 }
