@@ -3,12 +3,9 @@
 <p> {{ nome }} tem {{ idade }} anos.</p>
 <p>{{ nome }} tem mais de 44 anos?</p>
 <p>{{idade > 44}}</p>
-
 <p>Quanto é {{ idade }} + {{ maisUm }}?</p>
 <p>{{ idade + maisUm }}</p>
-
 <hr>
-
 <h2>Pronpety Binding</h2>
 <button [disabled]="checkedDisabled">Button</button>
 <img [src]="imgSrc" [title]="imgTitle" [alt]="imgTitle">
@@ -22,7 +19,6 @@
 {{ position.x }} - {{ position.y }}
 <br>
 <br>
-
 <hr>
 <h2>Two-Way Binding</h2>
 <input [(ngModel)]="nome">
@@ -30,3 +26,4 @@
 <br>
 <br>
 <hr>
+<br>
