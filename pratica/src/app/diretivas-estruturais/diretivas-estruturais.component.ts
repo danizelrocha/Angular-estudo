@@ -15,6 +15,9 @@ export class DiretivasEstruturaisComponent {
     { nome: "Tiago Rocha", idade:44 },
     { nome: "Laura Rocha", idade:13 }
   ];
+
+  public nome: string = 'daniel';
+  
   constructor() { }
 
   ngOnInit(): void {
